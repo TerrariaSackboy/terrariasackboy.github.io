@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shift Finder - App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lorimar Tabin">
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--Here so it can cover entire page-->
+    <div id="exportmenu">
+      Copy the data in the box below and save it somewhere.
+      <textarea></textarea>
+    </div>
+    <div id="importmenu">
+      <textarea></textarea>
+      <a id="importbutton" class="button">Import</a>
+    </div>
+    <div id="templatemenu">
+      <textarea></textarea>
+      <a id="updatetemplatesbutton" class="button" href="#">Update</a>
+    </div>
+    <div class="page-wrapper">
+      <h1>Shift Finder - App</h1>
+      <div class="main">
+        <div class="toolbar">
+          <div id="hidedaysmenu">
+            <a class="button contextbutton" href="#"></a>
+            <div class="contextmenu">
+              <div>
+                <input type="checkbox" id="hideday0" name="Sunday">
+                <label for="hideday0">Sunday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hideday1" name="Monday">
+                <label for="hideday1">Monday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hideday2" name="Tuesday">
+                <label for="hideday2">Tuesday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hideday3" name="Wednesday">
+                <label for="hideday3">Wednesday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hideday4" name="Thursday">
+                <label for="hideday4">Thursday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hideday5" name="Friday">
+                <label for="hideday5">Friday</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hideday6" name="Saturday">
+                <label for="hideday6">Saturday</label>
+              </div>
+            </div>
+          </div>
+          <div id="rowmenu">
+            <ul class="contextmenu">
+              <li>
+                <a id="savetemplatebutton" class="button" href="#">Save Template</a>
+              </li>
+              <li>
+                <a id="loadtemplatebutton" class="button" href="#">Reset to Template</a>
+              </li>
+              <li>
+                <a id="deleterowbutton" class="button" href="#">Delete</a>
+              </li>
+            </ul>
+          </div>
+          <div id="savemenu">
+            <a class="button contextbutton" href="#">Save ...</a>
+            <ul class="contextmenu">
+              <li>
+                <a id="exportjsonbutton" class="button" href="#">Export to JSON</a>
+              </li>
+            </ul>
+          </div>
+          <div id="loadmenu">
+            <a class="button contextbutton" href="#">Load ...</a>
+            <ul class="contextmenu">
+              <li>
+                <a id="importjsonbutton" class="button" href="#">Import from JSON</a>
+              </li>
+              <li>
+                <a id="loadsavedbutton" class="button contextbutton" href="#">Load Saved Schedule ...</a>
+                <ul id="savedscheduleslist" class="contextmenu">
+                  <li>Test</li>
+                  <li>Test</li>
+                  <li>Test</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a id="templatebutton" class="button" href="#">Time Templates</a>
+        </div>
+        <div id="schedule">
+          <div class="namecols"></div>
+          <div class="daycols"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
